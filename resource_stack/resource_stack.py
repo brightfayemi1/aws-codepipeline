@@ -14,7 +14,7 @@ class ResourceStack(Stack):
         queue = sqs.Queue(
             self, "AWSCDKCodePipelineappDemoQueue",
             visibility_timeout=Duration.seconds(300),
-            queue_name="demo_queue"
+            queue_name="demo_queue_bright"
         )
         function = function_lambda.Function(self,
                                             "DemoCDKGITHUBLambda",
